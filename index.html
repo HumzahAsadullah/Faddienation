@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faddieration — Creative Agency</title>
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" style="display: flex;align-items: center;justify-content: center;">
+                <img src="./Assets/images/logo.webp" alt="logo" width="50">
+                <span>Faddi<span>eration</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">+1 000000000000</a>
+                <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-overlay">
+        <div class="mobile-nav">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+            <a href="index.html">+1 000000000000</a>
+            <a href="contact.html" class="btn btn-sm btn-primary">Start a Project →</a>
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-dot active" data-section="hero"><span class="dot"></span><span class="tooltip">Home</span>
+        </div>
+        <div class="sidebar-dot" data-section="about"><span class="dot"></span><span class="tooltip">About</span></div>
+        <div class="sidebar-dot" data-section="services"><span class="dot"></span><span class="tooltip">Services</span>
+        </div>
+        <!-- <div class="sidebar-dot" data-section="portfolio"><span class="dot"></span><span
+                class="tooltip">Portfolio</span></div> -->
+        <div class="sidebar-dot" data-section="stats"><span class="dot"></span><span class="tooltip">Stats</span></div>
+        <div class="sidebar-dot" data-section="testimonials"><span class="dot"></span><span
+                class="tooltip">Testimonials</span></div>
+    </aside>
+
+    <main>
+        <!-- ===== HERO SLIDER ===== -->
+        <section id="hero" class="hero-section">
+            <div class="hero-slider">
+                <div class="slide active">
+                    <div class="slide-bg"
+                        style="background:linear-gradient(135deg, rgba(59,130,246,0.03) 0%, rgba(219,234,254,0.08) 50%, rgba(59,130,246,0.03) 100%)"></div>
+                    <div class="slide-shapes">
+                        <div class="shape shape-1"></div>
+                        <div class="shape shape-2"></div>
+                        <div class="shape shape-3"></div>
+                        <div class="shape shape-4"></div>
+                        <div class="shape shape-5"></div>
+                    </div>
+                    <div class="slide-content">
+                        <span class="slide-tag">CREATIVE AGENCY</span>
+                        <h1>We Build Creative<br>Digital Experiences</h1>
+                        <p>Award-winning creative agency specializing in brand identity, web design, and digital
+                            marketing that drives real business results.</p>
+                        <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg"
+                        style="background:linear-gradient(135deg, rgba(219,234,254,0.08) 0%, rgba(59,130,246,0.12) 50%, rgba(219,234,254,0.06) 100%)"></div>
+                    <div class="slide-shapes">
+                        <div class="shape shape-1" style="background:linear-gradient(135deg, rgba(59,130,246,0.15), rgba(219,234,254,0.1))"></div>
+                        <div class="shape shape-2" style="background:linear-gradient(135deg, rgba(245,158,11,0.2), rgba(245,158,11,0.1))"></div>
+                        <div class="shape shape-3" style="background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(219,234,254,0.08))"></div>
+                        <div class="shape shape-4"></div>
+                        <div class="shape shape-5" style="border-color:rgba(245,158,11,0.25)"></div>
+                    </div>
+                    <div class="slide-content">
+                        <span class="slide-tag">BRAND STRATEGY</span>
+                        <h1>Strategic Brand<br>Development</h1>
+                        <p>We develop comprehensive brand strategies that resonate with your audience, build lasting
+                            loyalty, and stand the test of time.</p>
+                        <a href="services.html" class="btn btn-primary">Our Process →</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-bg"
+                        style="background:linear-gradient(135deg, rgba(219,234,254,0.1) 0%, rgba(59,130,246,0.15) 40%, rgba(219,234,254,0.08) 100%)"></div>
+                    <div class="slide-shapes">
+                        <div class="shape shape-1" style="background:linear-gradient(135deg, rgba(245,158,11,0.18), rgba(245,158,11,0.08))"></div>
+                        <div class="shape shape-2" style="background:linear-gradient(135deg, rgba(59,130,246,0.2), rgba(219,234,254,0.12))"></div>
+                        <div class="shape shape-3" style="background:linear-gradient(135deg, rgba(219,234,254,0.2), rgba(59,130,246,0.1))"></div>
+                        <div class="shape shape-4" style="background:linear-gradient(135deg, rgba(59,130,246,0.12), rgba(219,234,254,0.08))"></div>
+                        <div class="shape shape-5"></div>
+                    </div>
+                    <div class="slide-content">
+                        <span class="slide-tag">UI / UX DESIGN</span>
+                        <h1>Intuitive User<br>Experiences</h1>
+                        <p>User-centered design approach that creates seamless, engaging digital experiences across all
+                            platforms and devices.</p>
+                        <a href="portfolio.html" class="btn btn-primary">View Work →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-progress">
+                <div class="hero-progress-bar"></div>
+            </div>
+            <div class="hero-dots">
+                <button class="hero-dot active" data-slide="0"></button>
+                <button class="hero-dot" data-slide="1"></button>
+                <button class="hero-dot" data-slide="2"></button>
+            </div>
+        </section>
+
+        <!-- ===== ABOUT STRIP ===== -->
+        <section id="about" class="about-strip">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-title">Crafting Digital Excellence<br>Since 2026</h2>
+                    <p class="section-desc">We're a passionate team of creatives, strategists, and developers building
+                        brands that matter and experiences that last.</p>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card reveal reveal-d1">
+                        <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                    <div class="stat-card reveal reveal-d2">
+                        <div class="stat-number" data-target="80" data-suffix="+">0</div>
+                        <div class="stat-label">Projects Delivered</div>
+                    </div>
+                    <div class="stat-card reveal reveal-d3">
+                        <div class="stat-number" data-target="50" data-suffix="+">0</div>
+                        <div class="stat-label">Happy Clients</div>
+                    </div>
+                    <div class="stat-card reveal reveal-d4">
+                        <div class="stat-number" data-target="2026">0</div>
+                        <div class="stat-label">Year Founded</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICES GRID ===== -->
+        <section id="services" class="services-grid-section">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">What We Do</span>
+                    <h2 class="section-title">Services We Offer</h2>
+                    <p class="section-desc">End-to-end creative solutions designed to elevate your brand and accelerate
+                        growth.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card reveal reveal-d1">
+                        <div class="service-icon"><img src="./Assets/images/logo-design.webp" alt=""></div>
+                        <h3>UI/UX Design</h3>
+                        <p>Intuitive interfaces and seamless user experiences that convert visitors into loyal
+                            customers.</p>
+                    </div>
+                    <div class="service-card reveal reveal-d2">
+                        <div class="service-icon"><img src="Assets/images/website.webp" alt=""></div>
+                        <h3>Web Development</h3>
+                        <p>High-performance websites built with modern technologies for speed, security, and
+                            scalability.</p>
+                    </div>
+                    <div class="service-card reveal reveal-d3">
+                        <div class="service-icon"><img src="Assets/images/social-media.webp" alt=""></div>
+                        <h3>Brand Strategy</h3>
+                        <p>Comprehensive brand identity systems that communicate your values and captivate audiences.
+                        </p>
+                    </div>
+                    <div class="service-card reveal reveal-d4">
+                        <div class="service-icon"><img src="Assets/images/smartphone.webp" alt=""></div>
+                        <h3>App Development</h3>
+                        <p>Cross-platform mobile applications that deliver exceptional experiences on every device.</p>
+                    </div>
+                    <div class="service-card reveal reveal-d5">
+                        <div class="service-icon"><img src="Assets/images/animation.webp" alt=""></div>
+                        <h3>Motion Design</h3>
+                        <p>Captivating animations and motion graphics that bring your brand story to life.</p>
+                    </div>
+                    <div class="service-card reveal reveal-d6">
+                        <div class="service-icon"><img src="Assets/images/stock-chart.png" alt=""></div>
+                        <h3>Digital Marketing</h3>
+                        <p>Data-driven marketing strategies that boost visibility, engagement, and conversions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PORTFOLIO ===== -->
+        <!-- <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Our Work</span>
+                    <h2 class="section-title">Selected Projects</h2>
+                </div>
+                <div class="filter-tabs reveal">
+                    <button class="filter-tab active" data-cat="all">All</button>
+                    <button class="filter-tab" data-cat="branding">Branding</button>
+                    <button class="filter-tab" data-cat="web">Web</button>
+                    <button class="filter-tab" data-cat="motion">Motion</button>
+                </div>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item reveal reveal-d1" data-cat="branding">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#26658c,#54acbf)">Branding
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Nova Brand Identity</h4><span>Branding</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-d2" data-cat="web">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#032859,#26658c)">Web
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>TechFlow Dashboard</h4><span>Web Design</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-d3" data-cat="motion">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#54acbf,#a7ebf2)">Motion
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Zenith Logo Animation</h4><span>Motion Design</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-d4" data-cat="branding">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#011c40,#032859)">Branding
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>EcoLife Brand System</h4><span>Branding</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-d5" data-cat="web">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#26658c,#011c40)">Web
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>DataViz Platform</h4><span>Web App</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-item reveal reveal-d6" data-cat="motion">
+                        <div class="portfolio-thumb" style="background:linear-gradient(135deg,#032859,#54acbf)">Motion
+                        </div>
+                        <div class="portfolio-overlay">
+                            <h4>Spark Social Reel</h4><span>Motion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  -->
+
+        <!-- ===== STATS MARQUEE ===== -->
+        <section id="stats" class="marquee-wrap">
+            <div class="marquee-track">
+                <span class="highlight">80+ Projects</span><span>•</span>
+                <span>Creative Design</span><span>•</span>
+                <span class="highlight">50+ Clients</span><span>•</span>
+                <span>Brand Strategy</span><span>•</span>
+                <span class="highlight">10 + Team Members</span><span>•</span>
+                <span>UI/UX Excellence</span><span>•</span>
+                <span class="highlight">Founded 2026</span><span>•</span>
+                <span>Web Development</span><span>•</span>
+                <span class="highlight">80+ Projects</span><span>•</span>
+                <span>Creative Design</span><span>•</span>
+                <span class="highlight">50+ Clients</span><span>•</span>
+                <span>Brand Strategy</span><span>•</span>
+                <span class="highlight">10 + Team Members</span><span>•</span>
+                <span>UI/UX Excellence</span><span>•</span>
+                <span class="highlight">Founded 2026</span><span>•</span>
+                <span>Web Development</span><span>•</span>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIALS ===== -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">Testimonials</span>
+                    <h2 class="section-title">What Clients Say</h2>
+                </div>
+                <div class="testimonial-slider reveal">
+                    <div class="testimonial-track">
+                        <div class="testimonial-card">
+                            <p class="quote">"Faddieration transformed our brand from the ground up. Their creativity
+                                and strategic thinking exceeded every expectation. The results speak for themselves — 3x
+                                engagement growth."</p>
+                            <div class="testimonial-avatar">AB</div>
+                            <p class="name">Alan Beischel</p>
+                            <p class="role">CEO, TechVentures</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="quote">"Working with the Faddieration team was an incredible experience. They
+                                delivered a website that perfectly captures our vision and has dramatically increased
+                                our online presence."</p>
+                            <div class="testimonial-avatar">IM</div>
+                            <p class="name">Isidra Melson</p>
+                            <p class="role">Founder, StyleHaus</p>
+                        </div>
+                        <div class="testimonial-card">
+                            <p class="quote">"The UI/UX design they created for our app is world-class. User
+                                satisfaction scores jumped 40% within the first month of launch. Absolutely outstanding
+                                work."</p>
+                            <div class="testimonial-avatar">LL</div>
+                            <p class="name">Larry Latchan</p>
+                            <p class="role">CTO, FinTrack</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-dots">
+                        <button class="t-dot active" data-t="0"></button>
+                        <button class="t-dot" data-t="1"></button>
+                        <button class="t-dot" data-t="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACT CTA ===== -->
+        <section id="contact-cta" class="cta-section">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Let's Create Something<br>Amazing Together</h2>
+                    <p class="section-desc">Ready to elevate your brand? We'd love to hear about your project and
+                        explore how we can help.</p>
+                    <div style="margin-top:2rem;display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+                        <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+                        <a href="portfolio.html" class="btn btn-outline">View Our Work</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Faddieration</h3>
+                <p>A creative agency crafting digital experiences that inspire, engage, and transform brands for the
+                    modern world.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"
+                            style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a><a href="about.html">About Us</a>
+                <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="services.html">UI/UX Design</a><a href="services.html">Web Development</a>
+                <a href="services.html">Brand Strategy</a><a href="services.html">Digital Marketing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                <a href="tel:+923293915877">+92 329 391 5877</a>
+                <a href="#">Karachi, Pakistan</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Faddieration. All rights reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            /* ========== HERO SLIDER ========== */
+            const slides = document.querySelectorAll('.slide');
+            const dots = document.querySelectorAll('.hero-dot');
+            const progressBar = document.querySelector('.hero-progress-bar');
+            const heroSection = document.querySelector('.hero-section');
+            let current = 0, interval, progressStart, paused = false;
+            const DURATION = 5000;
+
+            function goTo(idx) {
+                slides[current].classList.remove('active');
+                dots[current].classList.remove('active');
+                current = (idx + slides.length) % slides.length;
+                slides[current].classList.add('active');
+                dots[current].classList.add('active');
+                resetProgress();
+            }
+
+            function resetProgress() {
+                progressBar.style.transition = 'none';
+                progressBar.style.width = '0%';
+                progressStart = performance.now();
+                requestAnimationFrame(() => {
+                    progressBar.style.transition = `width ${DURATION}ms linear`;
+                    progressBar.style.width = '100%';
+                });
+            }
+
+            function startAuto() {
+                clearInterval(interval);
+                resetProgress();
+                interval = setInterval(() => { if (!paused) goTo(current + 1); }, DURATION);
+            }
+
+            dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.slide); startAuto(); }));
+
+            heroSection.addEventListener('mouseenter', () => paused = true);
+            heroSection.addEventListener('mouseleave', () => paused = false);
+
+            /* Keyboard */
+            document.addEventListener('keydown', e => {
+                if (e.key === 'ArrowRight') { goTo(current + 1); startAuto(); }
+                if (e.key === 'ArrowLeft') { goTo(current - 1); startAuto(); }
+            });
+
+            /* Swipe */
+            let sx = 0;
+            heroSection.addEventListener('touchstart', e => { sx = e.touches[0].clientX; }, { passive: true });
+            heroSection.addEventListener('touchend', e => {
+                const dx = e.changedTouches[0].clientX - sx;
+                if (Math.abs(dx) > 50) { goTo(dx < 0 ? current + 1 : current - 1); startAuto(); }
+            }, { passive: true });
+
+            startAuto();
+
+            /* ========== PORTFOLIO FILTER ========== */
+            const filterTabs = document.querySelectorAll('.filter-tab');
+            const portItems = document.querySelectorAll('.portfolio-item');
+            filterTabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    filterTabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    const cat = tab.dataset.cat;
+                    portItems.forEach(item => {
+                        const show = cat === 'all' || item.dataset.cat === cat;
+                        item.classList.toggle('hidden', !show);
+                    });
+                });
+            });
+
+            /* ========== TESTIMONIAL SLIDER ========== */
+            const tTrack = document.querySelector('.testimonial-track');
+            const tDots = document.querySelectorAll('.t-dot');
+            let tCurrent = 0;
+            function goToT(i) {
+                tCurrent = i;
+                tTrack.style.transform = `translateX(-${i * 100}%)`;
+                tDots.forEach((d, idx) => d.classList.toggle('active', idx === i));
+            }
+            tDots.forEach(d => d.addEventListener('click', () => goToT(+d.dataset.t)));
+            setInterval(() => goToT((tCurrent + 1) % 3), 6000);
+
+            /* ========== STAT COUNTERS ========== */
+            const statNums = document.querySelectorAll('.stat-number[data-target]');
+            const statObs = new IntersectionObserver(entries => {
+                entries.forEach(e => {
+                    if (e.isIntersecting) {
+                        const el = e.target;
+                        animateCounter(el, parseInt(el.dataset.target), 2200, el.dataset.suffix || '');
+                        statObs.unobserve(el);
+                    }
+                });
+            }, { threshold: 0.5 });
+            statNums.forEach(el => statObs.observe(el));
+        });
+    </script>
+</body>
+
+</html>

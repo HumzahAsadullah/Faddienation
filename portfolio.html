@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faddieration — Portfolio</title>
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/portfolio.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" style="display: flex;align-items: center;justify-content: center;">
+                <img src="Assets/images/logo.webp" alt="logo" width="50">
+                <span>Faddi<span>eration</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">+1 000000000000</a>
+                <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-overlay">
+        <div class="mobile-nav">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+            <a href="index.html" >+1 000000000000</a>
+            <a href="contact.html" class="btn btn-sm btn-primary">Start a Project →</a>
+        </div>
+    </div>
+
+    <!-- SIDEBAR: IDs matched to section tags below -->
+    <aside class="sidebar">
+        <div class="sidebar-dot active" data-section="port-hero"><span class="dot"></span><span class="tooltip">Top</span></div>
+        <div class="sidebar-dot" data-section="port-projects"><span class="dot"></span><span class="tooltip">Projects</span></div>
+        <div class="sidebar-dot" data-section="cta-section"><span class="dot"></span><span class="tooltip">Contact</span></div>
+    </aside>
+
+    <main>
+        <!-- HERO -->
+        <section id="port-hero" class="port-hero">
+            <canvas id="portParticles"></canvas>
+            <div class="container">
+                <div class="port-hero-inner">
+                    <div class="reveal">
+                        <span class="section-tag">Our Portfolio</span>
+                        <h1>Work That Speaks<br>For Itself</h1>
+                        <p>A curated collection of our finest projects — each one a testament to creativity, strategy, and meticulous craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO FILTER -->
+        <section id="port-projects" class="port-filter-section">
+            <div class="container" style="text-align:center">
+                <div class="port-tabs reveal">
+                    <button class="port-tab active" data-cat="all">All Projects</button>
+                    <button class="port-tab" data-cat="uxui">UI/UX Design</button>
+                    <button class="port-tab" data-cat="frontend">Front-End Development</button>
+                    <button class="port-tab" data-cat="backend">Back-End Development</button>
+                    <button class="port-tab" data-cat="graphic">Graphic Design</button>
+                    <button class="port-tab" data-cat="marketing">Digital Marketing</button>
+                </div>
+            </div>
+            <div class="port-grid">
+                <!-- Graphic Design -->
+                <div class="port-item reveal reveal-d1" data-cat="graphic">
+                    <div class="thumb" style="background:linear-gradient(135deg,#26658c,#54acbf)">
+                        <span class="thumb-icon"><i class="fa-solid fa-palette"></i></span>
+                        <span class="thumb-label">Brand Identity</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>Nova Brand Identity</h4>
+                        <span class="cat-tag">Graphic Design</span>
+                        <p>Complete brand identity system including logo, typography, color palette, and brand guidelines for a tech startup.</p>
+                    </div>
+                </div>
+                <!-- Front-End Development -->
+                <div class="port-item reveal reveal-d2" data-cat="frontend">
+                    <div class="thumb" style="background:linear-gradient(135deg,#032859,#26658c)">
+                        <span class="thumb-icon"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="thumb-label">Dashboard</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>TechFlow Dashboard</h4>
+                        <span class="cat-tag">Front-End Development</span>
+                        <p>Analytics dashboard with real-time data visualization, dark mode, and responsive design for SaaS platform.</p>
+                    </div>
+                </div>
+                <!-- Graphic Design -->
+                <div class="port-item reveal reveal-d3" data-cat="graphic">
+                    <div class="thumb" style="background:linear-gradient(135deg,#54acbf,#a7ebf2)">
+                        <span class="thumb-icon"><i class="fa-solid fa-video"></i></span>
+                        <span class="thumb-label">Animation</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>Zenith Logo Animation</h4>
+                        <span class="cat-tag">Graphic Design</span>
+                        <p>Dynamic logo reveal animation with particle effects and smooth transitions for brand launch campaign.</p>
+                    </div>
+                </div>
+                <!-- Front-End Development -->
+                <div class="port-item reveal reveal-d4" data-cat="frontend">
+                    <div class="thumb" style="background:linear-gradient(135deg,#011c40,#54acbf)">
+                        <span class="thumb-icon"><i class="fa-solid fa-mobile-screen"></i></span>
+                        <span class="thumb-label">Mobile App</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>Pulse Fitness App</h4>
+                        <span class="cat-tag">Front-End Development</span>
+                        <p>Cross-platform fitness tracking app with workout plans, progress analytics, and social features.</p>
+                    </div>
+                </div>
+                <!-- Graphic Design -->
+                <div class="port-item reveal reveal-d5" data-cat="graphic">
+                    <div class="thumb" style="background:linear-gradient(135deg,#032859,#011c40)">
+                        <span class="thumb-icon"><i class="fa-solid fa-rocket"></i></span>
+                        <span class="thumb-label">Rebrand</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>CloudSync Rebrand</h4>
+                        <span class="cat-tag">Graphic Design</span>
+                        <p>Full corporate rebrand for cloud computing company including new visual identity and marketing materials.</p>
+                    </div>
+                </div>
+                <!-- UI/UX Design -->
+                <div class="port-item reveal reveal-d6" data-cat="uxui">
+                    <div class="thumb" style="background:linear-gradient(135deg,#26658c,#011c40)">
+                        <span class="thumb-icon"><i class="fa-solid fa-chart-bar"></i></span>
+                        <span class="thumb-label">Platform</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>DataViz Platform</h4>
+                        <span class="cat-tag">UI/UX Design</span>
+                        <p>Interactive data visualization platform with custom charts, filters, and export capabilities.</p>
+                    </div>
+                </div>
+                <!-- Digital Marketing -->
+                <div class="port-item reveal reveal-d1" data-cat="marketing">
+                    <div class="thumb" style="background:linear-gradient(135deg,#54acbf,#032859)">
+                        <span class="thumb-icon"><i class="fa-solid fa-sparkles"></i></span>
+                        <span class="thumb-label">Social</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>Spark Social Campaign</h4>
+                        <span class="cat-tag">Digital Marketing</span>
+                        <p>Animated social media content series with eye-catching motion graphics and brand storytelling.</p>
+                    </div>
+                </div>
+                <!-- Graphic Design -->
+                <div class="port-item reveal reveal-d2" data-cat="graphic">
+                    <div class="thumb" style="background:linear-gradient(135deg,#a7ebf2,#26658c)">
+                        <span class="thumb-icon"><i class="fa-solid fa-leaf"></i></span>
+                        <span class="thumb-label">Eco Brand</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>EcoLife Brand System</h4>
+                        <span class="cat-tag">Graphic Design</span>
+                        <p>Sustainable brand identity for eco-friendly lifestyle company with organic visual language.</p>
+                    </div>
+                </div>
+                <!-- UI/UX Design -->
+                <div class="port-item reveal reveal-d3" data-cat="uxui">
+                    <div class="thumb" style="background:linear-gradient(135deg,#032859,#a7ebf2)">
+                        <span class="thumb-icon">💰</span>
+                        <span class="thumb-label">FinTech</span>
+                    </div>
+                    <div class="overlay">
+                        <h4>FinTrack App Design</h4>
+                        <span class="cat-tag">UI/UX Design</span>
+                        <p>Finance management app design with budget tracking, investment dashboard, and smart notifications.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="cta-section" class="cta-section">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Start Your Project</span>
+                    <h2 class="section-title">Your Project Could Be<br>Next On This Page</h2>
+                    <p class="section-desc">Let's create something remarkable together. Tell us about your vision and we'll bring it to life.</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top:2rem">Start a Project →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL -->
+    <div class="port-modal">
+        <button class="port-modal-nav port-modal-prev">&#10094;</button>
+        <div class="port-modal-inner"></div>
+        <button class="port-modal-nav port-modal-next">&#10095;</button>
+    </div>
+
+   <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Faddieration</h3>
+                <p>A creative agency crafting digital experiences that inspire, engage, and transform brands for the
+                    modern world.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"
+                            style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a><a href="about.html">About Us</a>
+                <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="services.html">UI/UX Design</a><a href="services.html">Web Development</a>
+                <a href="services.html">Brand Strategy</a><a href="services.html">Digital Marketing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                <a href="tel:+923293915877">+92 329 391 5877</a>
+                <a href="#">Karachi, Pakistan</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Faddieration. All rights reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/portfolio.js"></script>
+</body>
+</html> 

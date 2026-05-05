@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faddieration — Pricing Plans</title>
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/pricing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" style="display: flex;align-items: center;justify-content: center;">
+                <img src="Assets/images/logo.webp" alt="logo" width="50">
+                <span>Faddi<span>eration</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">+1 000000000000</a>
+                <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-overlay">
+        <div class="mobile-nav">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+            <a href="index.html">+1 000000000000</a>
+            <a href="contact.html" class="btn btn-sm btn-primary">Start a Project →</a>
+        </div>
+    </div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <div class="sidebar-dot active" data-section="pricing-hero-s"><span class="dot"></span><span
+                class="tooltip">Overview</span></div>
+        <div class="sidebar-dot" data-section="plans-section"><span class="dot"></span><span
+                class="tooltip">Plans</span></div>
+        <div class="sidebar-dot" data-section="how-it-works"><span class="dot"></span><span
+                class="tooltip">Process</span></div>
+        <div class="sidebar-dot" data-section="comparison"><span class="dot"></span><span class="tooltip">Compare</span>
+        </div>
+        <div class="sidebar-dot" data-section="faq"><span class="dot"></span><span class="tooltip">FAQ</span></div>
+        <div class="sidebar-dot" data-section="pricing-cta-s"><span class="dot"></span><span class="tooltip">Get
+                Started</span></div>
+    </aside>
+
+    <main>
+
+        <!-- =============== HERO =============== -->
+        <section id="pricing-hero-s" class="pricing-hero">
+            <canvas id="pricingParticles"></canvas>
+            <div class="hero-float-shapes">
+                <div class="hf-shape hf-shape-1"></div>
+                <div class="hf-shape hf-shape-2"></div>
+                <div class="hf-shape hf-shape-3"></div>
+                <div class="hf-shape hf-shape-4"></div>
+            </div>
+            <div class="container">
+                <div class="pricing-hero-inner">
+                    <div class="reveal">
+                        <span class="section-tag">Pricing Plans</span>
+                        <h1>Transparent Pricing.<br><span class="gradient-text">Exceptional Value.</span></h1>
+                        <p>No hidden fees, no surprises — just clear, honest pricing designed to deliver maximum impact
+                            at every stage of your business growth.</p>
+                    </div>
+                    <div class="hero-trust-row reveal reveal-d2">
+                        <span class="hero-badge"><span class="badge-icon"><i class="fa-solid fa-shield-halved"></i></span> 14-Day Money-Back</span>
+                        <span class="hero-badge"><span class="badge-icon"><i class="fa-solid fa-comment-dots"></i></span> Free Consultation</span>
+                        <span class="hero-badge"><span class="badge-icon"><i class="fa-solid fa-lock"></i></span> Full Source Ownership</span>
+                        <span class="hero-badge"><span class="badge-icon"><i class="fa-solid fa-bolt"></i></span> Fast Turnaround</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== TRUST STRIP =============== -->
+        <section class="trust-strip">
+            <div class="container">
+                <div class="trust-grid">
+                    <div class="trust-item reveal reveal-d1">
+                        <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>Satisfaction Guarantee</h4>
+                        <p>Not happy? We revise until you are — or full refund within 14 days.</p>
+                    </div>
+                    <div class="trust-item reveal reveal-d2">
+                        <div class="trust-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <h4>On-Time Delivery</h4>
+                        <p>Milestone-based timelines with clear deadlines you can count on.</p>
+                    </div>
+                    <div class="trust-item reveal reveal-d3">
+                        <div class="trust-icon"><i class="fa-solid fa-comment-dots"></i></div>
+                        <h4>Direct Communication</h4>
+                        <p>Access your project lead directly via WhatsApp, Slack, or Zoom.</p>
+                    </div>
+                    <div class="trust-item reveal reveal-d4">
+                        <div class="trust-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h4>100% Ownership</h4>
+                        <p>All files, code, and assets are fully yours upon project completion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== PRICING CARDS =============== -->
+        <section id="plans-section" class="pricing-cards-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">Choose Your Plan</span>
+                    <h2 class="section-title">Plans Built for Every Stage</h2>
+                    <p class="section-desc" style="margin:0 auto">From early-stage MVPs to enterprise-scale platforms —
+                        pick the perfect fit and upgrade anytime.</p>
+                </div>
+
+                <!-- Toggle -->
+                <div class="billing-toggle-wrap reveal reveal-d2">
+                    <span class="billing-label lbl-month active">Per Project</span>
+                    <div class="toggle-track">
+                        <div class="toggle-thumb"></div>
+                    </div>
+                    <span class="billing-label lbl-annual">Annual Retainer</span>
+                    <span class="save-badge">SAVE 20%</span>
+                </div>
+
+                <!-- Cards Grid -->
+                <div class="pricing-cards-grid">
+
+                     <!-- ===== STARTER ===== -->
+                     <div class="p-card reveal reveal-d1">
+                         <div class="card-glow"></div>
+                         <div class="p-card-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Starter</h3>
+                        <p class="p-desc">Ideal for startups & MVPs that need a powerful first impression on a lean
+                            budget.</p>
+
+                        <div class="price-block">
+                            <div class="price-original" data-orig="$5,988">$5,988/yr</div>
+                            <div class="price-amount" data-monthly="499" data-annual="4790" data-currency="$">
+                                <span class="currency">$</span>499
+                            </div>
+                            <div class="price-period">/project</div>
+                        </div>
+
+                        <div class="p-card-divider"></div>
+
+                        <ul class="p-features">
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Single Landing Page
+                                    Design</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Basic Brand Identity (Logo +
+                                    Colors)</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Mobile Responsive
+                                    Development</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Basic SEO Setup & Meta
+                                    Tags</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">2 Revision Rounds</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">5–7 Day Delivery</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">7-Day Post-Launch Support</span>
+                            </li>
+                            <li class="disabled"><span class="check no"><i class="fa-solid fa-xmark"></i></span><span class="feat-text">Custom
+                                    Animations</span></li>
+                            <li class="disabled"><span class="check no"><i class="fa-solid fa-xmark"></i></span><span class="feat-text">CMS
+                                    Integration</span></li>
+                            <li class="disabled"><span class="check no"><i class="fa-solid fa-xmark"></i></span><span class="feat-text">Dedicated
+                                    Project Manager</span></li>
+                        </ul>
+
+                        <a href="contact.html" class="btn btn-outline p-card-btn">Get Started</a>
+                    </div>
+
+                    <!-- ===== GROWTH (Featured) ===== -->
+                    <div class="p-card featured reveal reveal-d2">
+                        <div class="featured-ribbon"></div>
+                        <div class="featured-label">MOST POPULAR</div>
+                        <div class="card-glow"></div>
+                        <div class="p-card-icon"><i class="fa-solid fa-gem"></i></div>
+                        <h3>Growth</h3>
+                        <p class="p-desc">Full-scale digital presence for businesses ready to dominate their market.</p>
+
+                        <div class="price-block">
+                            <div class="price-original" data-orig="$17,988">$17,988/yr</div>
+                            <div class="price-amount" data-monthly="1499" data-annual="14390" data-currency="$">
+                                <span class="currency">$</span>1,499
+                            </div>
+                            <div class="price-period">/project</div>
+                        </div>
+
+                        <div class="p-card-divider"></div>
+
+                        <ul class="p-features">
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Multi-Page Website (up to 8
+                                    pages)</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Full Brand System &
+                                    Guidelines</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">UI/UX Design + Full
+                                    Development</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Custom Animations &
+                                    Interactions</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">CMS Integration (WordPress /
+                                    Sanity)</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Advanced SEO + Analytics
+                                    Setup</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Social Media Kit (10
+                                    Templates)</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">5 Revision Rounds</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">2–3 Week Delivery</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">30-Day Post-Launch
+                                    Support</span></li>
+                        </ul>
+
+                        <a href="contact.html" class="btn btn-primary p-card-btn">Choose Growth →</a>
+                    </div>
+
+                    <!-- ===== ENTERPRISE ===== -->
+                    <div class="p-card reveal reveal-d3">
+                        <div class="card-glow"></div>
+                        <div class="p-card-icon"><i class="fa-solid fa-building"></i></div>
+                        <h3>Enterprise</h3>
+                        <p class="p-desc">End-to-end solutions for organizations with complex, high-impact needs.</p>
+
+                        <div class="price-block">
+                            <div class="price-original" style="visibility:hidden">—</div>
+                            <div class="price-amount" data-monthly="Custom" data-annual="Custom" data-currency=""
+                                style="font-size:2.8rem">
+                                Custom
+                            </div>
+                            <div class="price-period">tailored quote</div>
+                        </div>
+
+                        <div class="p-card-divider"></div>
+
+                        <ul class="p-features">
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Custom Web Application
+                                    (Full-Stack)</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Complete Brand Strategy +
+                                    Identity</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">E-Commerce / SaaS Platform
+                                    Build</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Marketing Funnels &
+                                    Automation</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Custom API & Backend
+                                    Architecture</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Unlimited Revision Rounds</span>
+                            </li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Dedicated Project Manager</span>
+                            </li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Priority Support Channel</span>
+                            </li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">Custom Timeline &
+                                    Milestones</span></li>
+                            <li><span class="check yes"><i class="fa-solid fa-check"></i></span><span class="feat-text">90-Day Post-Launch
+                                    Maintenance</span></li>
+                        </ul>
+
+                        <a href="contact.html" class="btn btn-outline p-card-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== HOW IT WORKS =============== -->
+        <section id="how-it-works" class="how-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">Our Process</span>
+                    <h2 class="section-title">How It Works</h2>
+                    <p class="section-desc" style="margin:0 auto">Four simple steps from initial conversation to a live,
+                        polished final product.</p>
+                </div>
+                <div class="how-grid">
+                    <div class="how-step">
+                        <div class="how-num">01</div>
+                        <h4>Discovery Call</h4>
+                        <p>We hop on a free 30-minute call to understand your goals, audience, brand, and budget. No
+                            pressure, just clarity.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-num">02</div>
+                        <h4>Proposal & Plan</h4>
+                        <p>Within 48 hours you receive a detailed proposal with scope, timeline, milestones, and a
+                            transparent cost breakdown.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-num">03</div>
+                        <h4>Design & Build</h4>
+                        <p>Our team crafts your project with weekly check-ins, staged previews, and your feedback woven
+                            into every iteration.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-num">04</div>
+                        <h4>Launch & Support</h4>
+                        <p>We deploy, test, and hand over all files. Post-launch support ensures everything runs
+                            flawlessly from day one.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== COMPARISON TABLE =============== -->
+        <section id="comparison" class="comparison-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">Compare Plans</span>
+                    <h2 class="section-title">Feature-by-Feature Breakdown</h2>
+                    <p class="section-desc" style="margin:0 auto">See exactly what's included in each tier so you can
+                        make the right decision with confidence.</p>
+                </div>
+
+                <div class="comp-table-wrap reveal">
+                    <table class="comp-table">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>Starter</th>
+                                <th class="hl">Growth</th>
+                                <th>Enterprise</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Design & Branding -->
+                            <tr class="cat-row">
+                                <td colspan="4">Design & Branding</td>
+                            </tr>
+                            <tr>
+                                <td>Logo Design</td>
+                                <td>Basic</td>
+                                <td class="hl">Premium</td>
+                                <td>Premium+</td>
+                            </tr>
+                            <tr>
+                                <td>Brand Guidelines Document</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Color & Typography System</td>
+                                <td>Basic</td>
+                                <td class="hl">Complete</td>
+                                <td>Complete</td>
+                            </tr>
+                            <tr>
+                                <td>Social Media Templates</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl">10 Templates</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Print-Ready Collateral</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Motion / Animation Assets</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl">Basic</td>
+                                <td>Custom</td>
+                            </tr>
+
+                            <!-- Development -->
+                            <tr class="cat-row">
+                                <td colspan="4">Development</td>
+                            </tr>
+                            <tr>
+                                <td>Number of Pages</td>
+                                <td>1</td>
+                                <td class="hl">Up to 8</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Responsive Design</td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Custom Animations</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>CMS Integration</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>E-Commerce / SaaS Features</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Custom API / Back-End</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Performance Optimization</td>
+                                <td>Basic</td>
+                                <td class="hl">Advanced</td>
+                                <td>Enterprise-Grade</td>
+                            </tr>
+                            <tr>
+                                <td>Hosting Setup & Deploy</td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Marketing & SEO -->
+                            <tr class="cat-row">
+                                <td colspan="4">Marketing & SEO</td>
+                            </tr>
+                            <tr>
+                                <td>SEO Setup</td>
+                                <td>Basic</td>
+                                <td class="hl">Advanced</td>
+                                <td>Full Strategy</td>
+                            </tr>
+                            <tr>
+                                <td>Google Analytics / Tag Manager</td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Content Strategy</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Email Marketing Setup</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Conversion Tracking</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+
+                            <!-- Support & Delivery -->
+                            <tr class="cat-row">
+                                <td colspan="4">Support & Delivery</td>
+                            </tr>
+                            <tr>
+                                <td>Revision Rounds</td>
+                                <td>2</td>
+                                <td class="hl">5</td>
+                                <td>Unlimited</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery Timeline</td>
+                                <td>5–7 Days</td>
+                                <td class="hl">2–3 Weeks</td>
+                                <td>Custom</td>
+                            </tr>
+                            <tr>
+                                <td>Dedicated Project Manager</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Post-Launch Support</td>
+                                <td>7 Days</td>
+                                <td class="hl">30 Days</td>
+                                <td>90 Days</td>
+                            </tr>
+                            <tr>
+                                <td>Source File Handover</td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                                <td class="hl y"><i class="fa-solid fa-check"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Priority Support Channel</td>
+                                <td class="n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="hl n"><i class="fa-solid fa-xmark"></i></td>
+                                <td class="y"><i class="fa-solid fa-check"></i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== SOCIAL PROOF / TESTIMONIALS =============== -->
+        <section class="social-proof-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">Client Stories</span>
+                    <h2 class="section-title">Trusted by Growing Brands</h2>
+                </div>
+                <div class="sp-grid">
+                    <div class="sp-card reveal reveal-d1">
+                        <div class="sp-stars">★★★★★</div>
+                        <p class="sp-quote">"Faddieration's Growth plan was worth every penny. Our online presence
+                            completely transformed — 3x engagement in the first month alone."</p>
+                        <div class="sp-author">
+                            <div class="sp-avatar">AK</div>
+                            <div>
+                                <div class="sp-name">Ahmed Khan</div>
+                                <div class="sp-role">CEO, TechVentures — Growth Plan</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-card reveal reveal-d2">
+                        <div class="sp-stars">★★★★★</div>
+                        <p class="sp-quote">"Started with the Starter plan for our MVP. The quality was so impressive we
+                            upgraded to Growth within weeks. Seamless experience."</p>
+                        <div class="sp-author">
+                            <div class="sp-avatar" style="background:linear-gradient(135deg,#26658c,#a7ebf2)">SR</div>
+                            <div>
+                                <div class="sp-name">Sara Rehman</div>
+                                <div class="sp-role">Founder, StyleHaus — Starter → Growth</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sp-card reveal reveal-d3">
+                        <div class="sp-stars">★★★★★</div>
+                        <p class="sp-quote">"The Enterprise package delivered a custom platform that handles 50k+ daily
+                            users flawlessly. Their technical depth is unmatched."</p>
+                        <div class="sp-author">
+                            <div class="sp-avatar" style="background:linear-gradient(135deg,#032859,#54acbf)">MH</div>
+                            <div>
+                                <div class="sp-name">Mansoor Hassan</div>
+                                <div class="sp-role">CTO, FinTrack — Enterprise Plan</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== FAQ =============== -->
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="reveal" style="text-align:center;margin-bottom:0">
+                    <span class="section-tag">FAQ</span>
+                    <h2 class="section-title">Got Questions?</h2>
+                </div>
+                <div class="faq-layout">
+                    <div class="faq-left reveal reveal-left">
+                        <h3>We're here to help you decide.</h3>
+                        <p>Can't find the answer you're looking for? Reach out to our team directly — we typically
+                            respond within a few hours.</p>
+                        <a href="contact.html" class="faq-contact-link">Contact our team <span>→</span></a>
+                    </div>
+                    <div class="faq-list">
+                        <div class="faq-item reveal reveal-d1">
+                            <button class="faq-question">
+                                What's included in the free consultation?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">A 30-minute discovery call where we explore your project
+                                    goals, target audience, timeline, and budget. We provide initial recommendations and
+                                    outline exactly how Faddieration can help — completely obligation-free.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d2">
+                            <button class="faq-question">
+                                Can I upgrade my plan mid-project?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">Absolutely. If your needs evolve, we seamlessly upgrade
+                                    your plan. You only pay the difference in cost, and we adjust scope and timeline
+                                    accordingly. Many of our clients start with Starter and scale to Growth as they see
+                                    results.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d3">
+                            <button class="faq-question">
+                                How does the 14-day money-back guarantee work?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">If you're unsatisfied within the first 14 days of project
+                                    kickoff, we'll either pivot the creative direction entirely or issue a complete
+                                    refund — your choice. We're confident in our process, so we're happy to stand behind
+                                    it.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d4">
+                            <button class="faq-question">
+                                What is the Annual Retainer option?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">The annual retainer provides a dedicated monthly
+                                    allocation of design, development, or marketing hours at a 20% discount. Ideal for
+                                    businesses needing ongoing support — you get priority scheduling, a consistent team,
+                                    and predictable billing.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d5">
+                            <button class="faq-question">
+                                Do you work with clients outside Pakistan?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">Yes! We work with clients worldwide. Communication happens
+                                    via Slack, WhatsApp, or Zoom, and we accommodate all time zones. We've successfully
+                                    delivered projects for clients in the UAE, UK, USA, Canada, and across Southeast
+                                    Asia.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d6">
+                            <button class="faq-question">
+                                What payment methods are accepted?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">We accept bank transfers, PayPal, Wise (TransferWise), and
+                                    USDT. For larger projects, we offer milestone-based billing — typically 50% upfront
+                                    / 50% on delivery, or split across three milestones for Enterprise packages.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d1">
+                            <button class="faq-question">
+                                How many revisions do I really get?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">Each revision round is a consolidated batch of feedback.
+                                    We present mockups or staging links, you compile all feedback, and we implement.
+                                    This structured approach maximizes the value of each round. Starter includes 2,
+                                    Growth includes 5, and Enterprise is unlimited.</div>
+                            </div>
+                        </div>
+                        <div class="faq-item reveal reveal-d2">
+                            <button class="faq-question">
+                                What if I need something not listed in any plan?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <div class="faq-answer-inner">No problem at all. Our plans are starting frameworks —
+                                    every proposal is customized to your specific needs. Reach out through our contact
+                                    page, describe your requirements, and we'll craft a tailored package with a
+                                    transparent line-item quote.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =============== FINAL CTA =============== -->
+        <section id="pricing-cta-s" class="pricing-cta">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Ready to Start?</span>
+                    <h2 class="section-title">Let's Build Something<br>Extraordinary Together</h2>
+                    <p class="section-desc" style="margin:0 auto">Book a free 30-minute consultation. No obligations —
+                        just a conversation about how we can bring your vision to life.</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary">Start Your Project →</a>
+                        <a href="https://wa.me/923293915877?text=Hi%20Faddieration!%20I'm%20interested%20in%20your%20pricing%20plans.%20Could%20we%20schedule%20a%20call?"
+                            target="_blank" class="btn btn-outline"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Faddieration</h3>
+                <p>A creative agency crafting digital experiences that inspire, engage, and transform brands for the
+                    modern world.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a><a href="about.html">About Us</a>
+                <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="services.html">UI/UX Design</a><a href="services.html">Web Development</a>
+                <a href="services.html">Brand Strategy</a><a href="services.html">Digital Marketing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                <a href="tel:+923293915877">+92 329 391 5877</a>
+                <a href="#">Karachi, Pakistan</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Faddieration. All rights reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/pricing.js"></script>
+</body>
+
+</html>

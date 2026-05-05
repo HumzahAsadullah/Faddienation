@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faddieration — Services</title>
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" style="display: flex;align-items: center;justify-content: center;">
+                <img src="Assets/images/logo.webp" alt="logo" width="50">
+                <span>Faddi<span>eration</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">+1 000000000000</a>
+                <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-overlay">
+        <div class="mobile-nav">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+            <a href="index.html">+1 000000000000</a>
+            <a href="contact.html" class="btn btn-sm btn-primary">Start a Project →</a>
+        </div>
+    </div>
+
+    <!-- SIDEBAR: Updated data-section attributes to match IDs below -->
+    <aside class="sidebar">
+        <div class="sidebar-dot active" data-section="svc-hero"><span class="dot"></span><span
+                class="tooltip">Hero</span></div>
+        <div class="sidebar-dot" data-section="svc-uiux"><span class="dot"></span><span class="tooltip">UI/UX</span>
+        </div>
+        <div class="sidebar-dot" data-section="svc-frontend"><span class="dot"></span><span class="tooltip">Front
+                End</span></div>
+        <div class="sidebar-dot" data-section="svc-backend"><span class="dot"></span><span class="tooltip">Back
+                End</span></div>
+        <div class="sidebar-dot" data-section="svc-graphic"><span class="dot"></span><span
+                class="tooltip">Graphic</span></div>
+        <div class="sidebar-dot" data-section="svc-marketing"><span class="dot"></span><span
+                class="tooltip">Marketing</span></div>
+        <div class="sidebar-dot" data-section="cta-section"><span class="dot"></span><span
+                class="tooltip">Contact</span></div>
+    </aside>
+
+    <main>
+        <!-- HERO (ID Added) -->
+        <section id="svc-hero" class="svc-hero">
+            <canvas id="svcParticles"></canvas>
+            <div class="container">
+                <div class="svc-hero-inner">
+                    <div class="reveal">
+                        <span class="section-tag">Our Services</span>
+                        <h1>Solutions That Drive<br>Real Results</h1>
+                        <p>We offer a full spectrum of creative and technical services designed to elevate your brand
+                            and accelerate your business growth.</p>
+                    </div>
+                    <div class="pill-nav reveal">
+                        <a href="#svc-uiux" class="pill-link">UI/UX Design</a>
+                        <a href="#svc-frontend" class="pill-link">Front End</a>
+                        <a href="#svc-backend" class="pill-link">Back End</a>
+                        <a href="#svc-graphic" class="pill-link">Graphic Design</a>
+                        <a href="#svc-marketing" class="pill-link">Marketing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STICKY TABS -->
+        <div class="svc-tabs-bar">
+            <div class="svc-tabs-inner">
+                <button class="svc-tab active" data-target="svc-uiux">UI/UX Design</button>
+                <button class="svc-tab" data-target="svc-frontend">Front End</button>
+                <button class="svc-tab" data-target="svc-backend">Back End</button>
+                <button class="svc-tab" data-target="svc-graphic">Graphic Design</button>
+                <button class="svc-tab" data-target="svc-marketing">Marketing</button>
+            </div>
+        </div>
+
+        <!-- SERVICE 1: UI/UX -->
+        <div id="svc-uiux" class="svc-block">
+            <div class="svc-layout">
+                <div class="svc-info reveal reveal-left">
+                    <div class="svc-num">01</div>
+                    <span class="section-tag">Design</span>
+                    <h2>UI/UX Design</h2>
+                    <p style="color:var(--gray);margin-bottom:1rem">We create intuitive, beautiful interfaces that users
+                        love and businesses rely on.</p>
+                    <ul>
+                        <li>User Research & Persona Development</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Visual Design & Design Systems</li>
+                        <li>Usability Testing & Iteration</li>
+                        <li>Responsive & Adaptive Layouts</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started →</a>
+                </div>
+                <div class="svc-visual reveal reveal-right">
+                    <div class="mock-browser">
+                        <div class="mock-topbar">
+                            <span class="mock-dot r"></span><span class="mock-dot y"></span><span
+                                class="mock-dot g"></span>
+                            <span class="mock-url">faddieration.design/preview</span>
+                        </div>
+                        <div class="mock-body">
+                            <div style="display:grid;grid-template-columns:1fr 2fr;gap:1rem;height:100%">
+                                <div style="display:flex;flex-direction:column;gap:0.5rem">
+                                    <div style="height:30px;border-radius:6px;background:rgba(167,235,242,0.1)"></div>
+                                    <div
+                                        style="height:20px;border-radius:6px;background:rgba(167,235,242,0.06);width:80%">
+                                    </div>
+                                    <div
+                                        style="height:20px;border-radius:6px;background:rgba(167,235,242,0.06);width:60%">
+                                    </div>
+                                    <div
+                                        style="flex:1;border-radius:8px;background:rgba(84,172,191,0.08);margin-top:0.5rem">
+                                    </div>
+                                </div>
+                                <div style="display:flex;flex-direction:column;gap:0.5rem">
+                                    <div
+                                        style="flex:1;border-radius:8px;background:linear-gradient(135deg,rgba(84,172,191,0.15),rgba(167,235,242,0.05))">
+                                    </div>
+                                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.5rem">
+                                        <div style="height:50px;border-radius:6px;background:rgba(167,235,242,0.08)">
+                                        </div>
+                                        <div style="height:50px;border-radius:6px;background:rgba(84,172,191,0.1)">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 2: FRONT END -->
+        <div id="svc-frontend" class="svc-block">
+            <div class="svc-layout reverse">
+                <div class="svc-info reveal reveal-right">
+                    <div class="svc-num">02</div>
+                    <span class="section-tag">Development</span>
+                    <h2>Front End Development</h2>
+                    <p style="color:var(--gray);margin-bottom:1rem">We build fast, responsive, pixel-perfect front ends
+                        with modern frameworks and clean code.</p>
+                    <ul>
+                        <li>React, Next.js & Vue.js Applications</li>
+                        <li>Responsive & Mobile-First Development</li>
+                        <li>Performance Optimization</li>
+                        <li>Animation & Micro-Interactions</li>
+                        <li>Cross-Browser Compatibility</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started →</a>
+                </div>
+                <div class="svc-visual reveal reveal-left">
+                    <div class="mock-browser code-window">
+                        <div class="mock-topbar">
+                            <span class="mock-dot r"></span><span class="mock-dot y"></span><span
+                                class="mock-dot g"></span>
+                            <span class="mock-url">app.jsx — Faddieration</span>
+                        </div>
+                        <div class="mock-body">
+                            <span class="code-kw">import</span> <span class="code-var">React</span> <span
+                                class="code-kw">from</span> <span class="code-str">'react'</span>;<br>
+                            <span class="code-kw">import</span> { <span class="code-var">motion</span> } <span
+                                class="code-kw">from</span> <span class="code-str">'framer-motion'</span>;<br><br>
+                            <span class="code-kw">const</span> <span class="code-fn">Hero</span> <span class="code-op">=
+                                () =&gt; {</span><br>
+                            &nbsp;&nbsp;<span class="code-kw">return</span> (<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-op">&lt;</span><span
+                                class="code-fn">motion.div</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-var">initial</span><span
+                                class="code-op">={{ opacity: 0 }}</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-var">animate</span><span
+                                class="code-op">={{ opacity: 1 }}</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-var">className</span>=<span
+                                class="code-str">"hero"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-op">&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-op">&lt;</span><span
+                                class="code-fn">h1</span><span class="code-op">&gt;</span><span
+                                class="code-str">Welcome</span><span class="code-op">&lt;/</span><span
+                                class="code-fn">h1</span><span class="code-op">&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-op">&lt;/</span><span
+                                class="code-fn">motion.div</span><span class="code-op">&gt;</span><br>
+                            &nbsp;&nbsp;);<br>
+                            <span class="code-op">};</span><br><br>
+                            <span class="code-cm">// Exported with love by Faddieration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 3: BACK END -->
+        <div id="svc-backend" class="svc-block">
+            <div class="svc-layout">
+                <div class="svc-info reveal reveal-left">
+                    <div class="svc-num">03</div>
+                    <span class="section-tag">Infrastructure</span>
+                    <h2>Back End Development</h2>
+                    <p style="color:var(--gray);margin-bottom:1rem">Robust server-side architecture that powers
+                        scalable, secure, and lightning-fast applications.</p>
+                    <ul>
+                        <li>Node.js, Python & PHP Back Ends</li>
+                        <li>RESTful API & GraphQL Design</li>
+                        <li>Database Architecture & Optimization</li>
+                        <li>Cloud Deployment (AWS, Vercel, Railway)</li>
+                        <li>Authentication & Security Systems</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started →</a>
+                </div>
+                    <div class="svc-visual reveal reveal-right">
+                        <div class="api-diagram">
+                            <div class="api-node">
+                                <div class="api-icon"><i class="fa-solid fa-desktop"></i></div><span>Client Application</span>
+                            </div>
+                            <div class="api-arrow">↕</div>
+                            <div class="api-node">
+                                <div class="api-icon"><i class="fa-solid fa-bolt"></i></div><span>REST API Gateway</span>
+                            </div>
+                            <div class="api-arrow">↕</div>
+                            <div class="api-node">
+                                <div class="api-icon"><i class="fa-solid fa-shield-halved"></i></div><span>Auth & Middleware</span>
+                            </div>
+                            <div class="api-arrow">↕</div>
+                            <div class="api-node">
+                                <div class="api-icon"><i class="fa-solid fa-database"></i></div><span>Database Layer</span>
+                            </div>
+                            <div class="api-arrow">↕</div>
+                            <div class="api-node">
+                                <div class="api-icon"><i class="fa-solid fa-cloud"></i></div><span>Cloud Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 4: GRAPHIC DESIGN -->
+        <div id="svc-graphic" class="svc-block">
+            <div class="svc-layout reverse">
+                <div class="svc-info reveal reveal-right">
+                    <div class="svc-num">04</div>
+                    <span class="section-tag">Visual</span>
+                    <h2>Graphic Design</h2>
+                    <p style="color:var(--gray);margin-bottom:1rem">Visually stunning design that communicates your
+                        brand's story.</p>
+                    <ul>
+                        <li>Logo & Brand Identity Design</li>
+                        <li>Print & Packaging Design</li>
+                        <li>Social Media Graphics</li>
+                        <li>Illustration & Iconography</li>
+                        <li>Presentation & Pitch Decks</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started →</a>
+                </div>
+                <div class="svc-visual reveal reveal-left">
+                    <div class="brand-showcase">
+                        <div class="brand-tile">F</div>
+                        <div class="brand-tile">Typography<br>& Visual</div>
+                        <div class="brand-tile">
+                            <div class="color-dots">
+                                <span style="background:#a7ebf2"></span>
+                                <span style="background:#54acbf"></span>
+                                <span style="background:#26658c"></span>
+                                <span style="background:#032859"></span>
+                            </div>
+                        </div>
+                        <div class="brand-tile">Brand<br>Guidelines</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICE 5: MARKETING -->
+        <div id="svc-marketing" class="svc-block">
+            <div class="svc-layout">
+                <div class="svc-info reveal reveal-left">
+                    <div class="svc-num">05</div>
+                    <span class="section-tag">Growth</span>
+                    <h2>Digital Marketing</h2>
+                    <p style="color:var(--gray);margin-bottom:1rem">Data-driven marketing strategies that boost
+                        visibility and maximize ROI.</p>
+                    <ul>
+                        <li>SEO & Content Strategy</li>
+                        <li>Social Media Management</li>
+                        <li>Paid Advertising (Google, Meta)</li>
+                        <li>Email Marketing Automation</li>
+                        <li>Analytics & Reporting</li>
+                    </ul>
+                    <a href="contact.html" class="btn btn-primary">Get Started →</a>
+                </div>
+                <div class="svc-visual reveal reveal-right">
+                    <div class="rev-chart">
+                        <div class="rev-bar" style="background:linear-gradient(to top,#26658c,#54acbf);height:40%">
+                            <span>Jan</span></div>
+                        <div class="rev-bar" style="background:linear-gradient(to top,#26658c,#54acbf);height:55%">
+                            <span>Feb</span></div>
+                        <div class="rev-bar" style="background:linear-gradient(to top,#26658c,#54acbf);height:45%">
+                            <span>Mar</span></div>
+                        <div class="rev-bar" style="background:linear-gradient(to top,#26658c,#a7ebf2);height:70%">
+                            <span>Apr</span></div>
+                        <div class="rev-bar" style="background:linear-gradient(to top,#54acbf,#a7ebf2);height:85%">
+                            <span>May</span></div>
+                        <div class="rev-bar" style="background:linear-gradient(to top,#54acbf,#a7ebf2);height:100%">
+                            <span>Jun</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA (ID Added for sidebar) -->
+        <section id="cta-section" class="cta-section">
+            <div class="container">
+                <div class="reveal">
+                    <span class="section-tag">Ready?</span>
+                    <h2 class="section-title">Let's Build Something<br>Extraordinary</h2>
+                    <p class="section-desc">Tell us about your project and we'll craft a custom solution.</p>
+                    <a href="contact.html" class="btn btn-primary" style="margin-top:2rem">Start Your Project →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Faddieration</h3>
+                <p>A creative agency crafting digital experiences that inspire, engage, and transform brands for the
+                    modern world.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp" style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a><a href="about.html">About Us</a>
+                <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="services.html">UI/UX Design</a><a href="services.html">Web Development</a>
+                <a href="services.html">Brand Strategy</a><a href="services.html">Digital Marketing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                <a href="tel:+923293915877">+92 329 391 5877</a>
+                <a href="#">Karachi, Pakistan</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Faddieration. All rights reserved. Crafted with passion.</p>
+        </div>
+    </footer>44
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/services.js"></script>
+</body>
+
+</html>

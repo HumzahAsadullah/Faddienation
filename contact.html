@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faddieration — Contact</title>
+    <link rel="stylesheet" href="Styling/style.css">
+    <link rel="stylesheet" href="Styling/contact.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="Assets/images/logo.webp" type="image/png">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-inner">
+            <a href="index.html" style="display: flex;align-items: center;justify-content: center;">
+                <img src="Assets/images/logo.webp" alt="logo" width="50">
+                <span>Faddi<span>eration</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="portfolio.html" class="nav-link">Portfolio</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">+1 000000000000</a>
+                <a href="contact.html" class="btn btn-primary">Start a Project →</a>
+            </div>
+            <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-overlay">
+        <div class="mobile-nav">
+            <a href="index.html">Home</a><a href="about.html">About</a>
+            <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+            <a href="pricing.html">Pricing</a><a href="contact.html">Contact</a>
+            <a href="index.html" >+1 000000000000</a>
+            <a href="contact.html" class="btn btn-sm btn-primary">Start a Project →</a>
+        </div>
+    </div>
+
+    <!-- SIDEBAR: IDs matched to sections below -->
+    <aside class="sidebar">
+        <div class="sidebar-dot active" data-section="contact-hero"><span class="dot"></span><span class="tooltip">Top</span></div>
+        <div class="sidebar-dot" data-section="contact-form-section"><span class="dot"></span><span class="tooltip">Message</span></div>
+        <div class="sidebar-dot" data-section="contact-services"><span class="dot"></span><span class="tooltip">Services</span></div>
+    </aside>
+
+    <main>
+        <!-- HERO -->
+        <section id="contact-hero" class="contact-hero">
+            <canvas id="contactParticles"></canvas>
+            <div class="container">
+                <div class="contact-hero-inner">
+                    <div class="reveal">
+                        <span class="section-tag">Contact Us</span>
+                        <h1>Let's Start a<br>Conversation</h1>
+                        <p>Have a project in mind? We'd love to hear about it. Fill out the form below and we'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SPLIT -->
+        <section id="contact-form-section" >
+            <div class="contact-split">
+                <!-- LEFT: Info Panel -->
+                <div class="contact-info reveal reveal-left">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/923293915877" target="_blank">+92 329 391 5877</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lahore, Punjab, Pakistan</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon – Fri: 9:00 AM – 6:00 PM (PKT)</p>
+                        </div>
+                    </div>
+                    <div class="avail-badge">
+                        <span class="avail-dot"></span>
+                        Available for new projects
+                    </div>
+                </div>
+
+                <!-- RIGHT: Form -->
+                <div class="contact-form-wrap reveal reveal-right">
+                    <h3 style="font-size:1.2rem;margin-bottom:0.3rem">Send Us a Message</h3>
+                    <p style="color:var(--gray);font-size:0.82rem;margin-bottom:2rem">Fill out the details below and we'll reach out via WhatsApp.</p>
+
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John">
+                                <div class="form-error">Min 2 characters</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe">
+                                <div class="form-error">Min 2 characters</div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567">
+                                <div class="form-error">Enter valid phone number</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com">
+                                <div class="form-error">Enter valid email</div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Needed</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service...</option>
+                                <option value="UI/UX Design">UI/UX Design</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Brand Strategy">Brand Strategy</option>
+                                <option value="Digital Marketing">Digital Marketing</option>
+                                <option value="App Development">App Development</option>
+                                <option value="Motion Design">Motion Design</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <div class="form-error">Please select a service</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget">
+                                <option value="">Select budget range...</option>
+                                <option value="Under $500">Under $500</option>
+                                <option value="$500 - $1,000">$500 – $1,000</option>
+                                <option value="$1,000 - $5,000">$1,000 – $5,000</option>
+                                <option value="$5,000 - $10,000">$5,000 – $10,000</option>
+                                <option value="$10,000+">$10,000+</option>
+                            </select>
+                            <div class="form-error">Please select a budget range</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="project">Project Details</label>
+                            <textarea id="project" name="project" placeholder="Tell us about your project..."></textarea>
+                            <div class="form-error">Min 10 characters required</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">Send via WhatsApp →</button>
+                    </form>
+
+                    <div class="success-state">
+                        <div class="success-check">
+                            <div class="check-icon"></div>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Opening WhatsApp now. We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES STRIP -->
+        <section id="contact-services" class="contact-services">
+            <div class="container">
+                <div class="reveal" style="text-align:center">
+                    <span class="section-tag">What We Offer</span>
+                    <h2 class="section-title">Learn more about our core services</h2>
+                </div>
+                <div class="services-mini-grid">
+                    <div class="mini-svc-card reveal reveal-d1">
+                        <div class="svc-emoji"><i class="fa-solid fa-palette"></i></div>
+                        <h4>UI/UX Design</h4>
+                        <p>Beautiful, intuitive interfaces designed for seamless user experiences.</p>
+                    </div>
+                    <div class="mini-svc-card reveal reveal-d2">
+                        <div class="svc-emoji"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h4>Web Development</h4>
+                        <p>High-performance websites built with cutting-edge technologies.</p>
+                    </div>
+                    <div class="mini-svc-card reveal reveal-d3">
+                        <div class="svc-emoji"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>Brand Strategy</h4>
+                        <p>Comprehensive brand systems that captivate and convert.</p>
+                    </div>
+                    <div class="mini-svc-card reveal reveal-d4">
+                        <div class="svc-emoji"><i class="fa-solid fa-chart-line"></i></div>
+                        <h4>Digital Marketing</h4>
+                        <p>Data-driven strategies that maximize reach and ROI.</p>
+                    </div>
+                    <div class="mini-svc-card reveal reveal-d5">
+                        <div class="svc-emoji"><i class="fa-solid fa-mobile-screen"></i></div>
+                        <h4>App Development</h4>
+                        <p>Cross-platform mobile apps that deliver exceptional UX.</p>
+                    </div>
+                    <div class="mini-svc-card reveal reveal-d6">
+                        <div class="svc-emoji"><i class="fa-solid fa-video"></i></div>
+                        <h4>Motion Design</h4>
+                        <p>Captivating animations that bring your brand to life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Faddieration</h3>
+                <p>A creative agency crafting digital experiences that inspire, engage, and transform brands for the
+                    modern world.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin" style="color: rgb(255, 255, 255);"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"
+                            style="color: rgb(255, 255, 255);"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a><a href="about.html">About Us</a>
+                <a href="services.html">Services</a><a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="services.html">UI/UX Design</a><a href="services.html">Web Development</a>
+                <a href="services.html">Brand Strategy</a><a href="services.html">Digital Marketing</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <a href="mailto:hello@faddieration.com">hello@faddieration.com</a>
+                <a href="tel:+923293915877">+92 329 391 5877</a>
+                <a href="#">Karachi, Pakistan</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Faddieration. All rights reserved. Crafted with passion.</p>
+        </div>
+    </footer>
+
+    <script src="Scripts/script.js"></script>
+    <script src="Scripts/contact.js"></script>
+</body>
+</html>
