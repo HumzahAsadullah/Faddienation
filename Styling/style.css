@@ -453,6 +453,7 @@ section {
   height: 36px;
   border-radius: 50%;
   background: rgba(59, 130, 246, 0.1);
+  color: var(--blue-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1299,6 +1300,23 @@ section {
   transform: scale(1.4);
 }
 
+/* ===== CTA SECTION ===== */
+.cta-section {
+  text-align: left;
+  background: linear-gradient(135deg, var(--light) 0%, var(--white) 100%);
+  position: relative;
+  overflow: hidden;
+}
+.cta-section::before {
+  content: '';
+  position: absolute;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.06), transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .sidebar {
@@ -1363,5 +1381,73 @@ section {
   }
   .stats-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ===== WHATSAPP STICKY ICON ===== */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background: #25d366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  animation: pulse 2s infinite, float 3s ease-in-out infinite;
+}
+
+.whatsapp-sticky:hover {
+  background: #128c7e;
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  animation-play-state: paused;
+}
+
+.whatsapp-sticky i {
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-sticky:hover i {
+  transform: scale(1.1);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .whatsapp-sticky {
+    bottom: 15px;
+    right: 15px;
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
   }
 }

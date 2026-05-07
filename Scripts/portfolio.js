@@ -52,39 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    /* Show More Button */
-    const showMoreBtn = document.getElementById('showMoreProjects');
-    const moreProjectsSection = document.getElementById('more-projects');
-    const moreProjectsGrid = document.getElementById('moreProjectsGrid');
-
-    if (showMoreBtn && moreProjectsSection) {
-        showMoreBtn.addEventListener('click', () => {
-            // Fade in more projects
-            moreProjectsSection.style.display = 'block';
-            moreProjectsSection.style.opacity = '0';
-            
-            // Trigger reflow
-            moreProjectsSection.offsetHeight;
-            
-            moreProjectsSection.style.transition = 'opacity 0.6s ease';
-            moreProjectsSection.style.opacity = '1';
-            
-            // Hide button after reveal
-            showMoreBtn.style.opacity = '0';
-            showMoreBtn.style.transform = 'translateY(10px)';
-            setTimeout(() => {
-                showMoreBtn.style.display = 'none';
-            }, 400);
-
-            // Reveal items with stagger
-            const moreItems = moreProjectsGrid.querySelectorAll('.port-item');
-            moreItems.forEach((item, i) => {
-                item.style.transitionDelay = (i * 0.1) + 's';
-                item.classList.add('revealed');
-            });
-        });
-    }
-
     /* Modal */
     const modal = document.querySelector('.port-modal');
     const modalInner = document.querySelector('.port-modal-inner');
@@ -93,31 +60,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.port-modal-next');
 
     let filteredItems = [];
-    let currentIndex = 0;
 
     // Include both initial and more items for modal
     const allItems = items.length ? items : document.querySelectorAll('.port-item');
-    const filteredItems = Array.from(allItems);
+    filteredItems = Array.from(allItems);
 
     function updateModalContent(item) {
         const title = item.querySelector('.overlay h4')?.textContent || '';
-        const bg = item.querySelector('.thumb')?.style.background || '';
+        const thumb = item.querySelector('.thumb');
+        const img = thumb?.querySelector('img');
+        const thumbIcon = thumb?.querySelector('.thumb-icon')?.innerHTML || '';
+        const thumbLabel = thumb?.querySelector('.thumb-label')?.textContent || '';
+        const bg = thumb?.style.background || '';
+
+        let mediaContent = '';
+        if (img && img.src) {
+            mediaContent = `<img src="${img.src}" alt="${title}" class="port-modal-img">`;
+        } else {
+            mediaContent = `
+                <div class="port-modal-bg" style="background: ${bg};">
+                    <div class="port-modal-content">
+                        <span class="port-modal-icon">${thumbIcon}</span>
+                        <span class="port-modal-label">${thumbLabel}</span>
+                    </div>
+                </div>
+            `;
+        }
 
         modalInner.innerHTML = `
             <button class="port-modal-close">&times;</button>
-            <div style="
-                width: 100vw; 
-                height: 100vh; 
-                background: ${bg};
-                display: flex; 
-                align-items: center; 
-                justify-content: center;
-                position: absolute;
-                top: 0;
-                left: 0;
-            ">
-                <span style="font-family:var(--font-heading);font-size:3rem;opacity:0.2;text-align:center;">${title}</span>
-            </div>
+            ${mediaContent}
+            <div class="port-modal-title">${title}</div>
         `;
     }
 
@@ -190,6 +163,65 @@ document.addEventListener('DOMContentLoaded', () => {
                     filteredItems = getVisibleItems();
                 }, 650);
             });
+        });
+    }
+
+    /* Show More Button */
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const allPortItems = document.querySelectorAll('.port-item');
+    let visibleCount = 12; // Initially show 12 items
+    let isExpanded = false;
+
+    if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
+            if (!isExpanded) {
+                // Show more items (next 8)
+                const itemsToShow = Array.from(allPortItems).slice(visibleCount, visibleCount + 8);
+                itemsToShow.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.add('show');
+                        item.style.transitionDelay = (index * 0.1) + 's';
+                    }, index * 50);
+                });
+
+                // Update state
+                visibleCount += 8;
+                isExpanded = true;
+
+                // Change button text
+                showMoreBtn.textContent = 'Show Less';
+
+                // Reset transition delays
+                setTimeout(() => {
+                    itemsToShow.forEach(item => {
+                        item.style.transitionDelay = '0s';
+                    });
+                }, 1000);
+
+            } else {
+                // Hide extra items
+                const itemsToHide = Array.from(allPortItems).slice(12);
+                itemsToHide.forEach((item, index) => {
+                    setTimeout(() => {
+                        item.classList.remove('show');
+                        item.style.transitionDelay = (index * 0.05) + 's';
+                    }, index * 30);
+                });
+
+                // Update state
+                visibleCount = 12;
+                isExpanded = false;
+
+                // Change button text
+                showMoreBtn.textContent = 'Show More Projects';
+
+                // Reset transition delays
+                setTimeout(() => {
+                    itemsToHide.forEach(item => {
+                        item.style.transitionDelay = '0s';
+                    });
+                }, 500);
+            }
         });
     }
 });
