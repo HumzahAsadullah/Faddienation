@@ -690,8 +690,8 @@ section {
   box-shadow: 0 16px 50px rgba(59, 130, 246, 0.1);
 }
 .service-icon {
-  width: 100px;
-  height: 100px;
+  width: 80px !important;
+  height: 80px !important;
   border-radius: 12px;
   background: rgba(59, 130, 246, 0.08);
   display: flex;
@@ -702,6 +702,13 @@ section {
   color: var(--blue);
   border: 1px solid rgba(59, 130, 246, 0.15);
 }
+.service-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+
 .service-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -1240,6 +1247,7 @@ section {
 .testimonial-track {
   display: flex;
   transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  gap: 25px !important;
 }
 .testimonial-card {
   min-width: 100%;
