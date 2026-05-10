@@ -708,7 +708,6 @@ section {
   object-fit: contain;
 }
 
-
 .service-card h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -730,7 +729,12 @@ section {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--white) 0%, var(--light) 50%, var(--white) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--white) 0%,
+    var(--light) 50%,
+    var(--white) 100%
+  );
 }
 .hero-slider {
   position: absolute;
@@ -754,7 +758,12 @@ section {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.03) 0%, rgba(219, 234, 254, 0.08) 50%, rgba(59, 130, 246, 0.03) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.03) 0%,
+    rgba(219, 234, 254, 0.08) 50%,
+    rgba(59, 130, 246, 0.03) 100%
+  );
 }
 .slide-shapes {
   position: absolute;
@@ -773,7 +782,11 @@ section {
   height: 300px;
   right: -80px;
   top: 10%;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(219, 234, 254, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.12),
+    rgba(219, 234, 254, 0.08)
+  );
   border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
   animation-duration: 10s;
 }
@@ -782,7 +795,11 @@ section {
   height: 150px;
   left: 15%;
   bottom: 15%;
-  background: linear-gradient(135deg, rgba(219, 234, 254, 0.2), rgba(59, 130, 246, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(219, 234, 254, 0.2),
+    rgba(59, 130, 246, 0.1)
+  );
   animation-delay: 2s;
   animation-duration: 7s;
 }
@@ -791,7 +808,11 @@ section {
   height: 80px;
   right: 20%;
   bottom: 30%;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(245, 158, 11, 0.1));
+  background: linear-gradient(
+    135deg,
+    rgba(245, 158, 11, 0.2),
+    rgba(245, 158, 11, 0.1)
+  );
   border-radius: 20%;
   animation-delay: 4s;
   animation-duration: 6s;
@@ -801,7 +822,11 @@ section {
   height: 200px;
   left: 40%;
   top: -50px;
-  background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(219, 234, 254, 0.06));
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.1),
+    rgba(219, 234, 254, 0.06)
+  );
   border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
   animation-delay: 1s;
   animation-duration: 12s;
@@ -943,7 +968,7 @@ section {
 }
 .marquee-wrap::before,
 .marquee-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -995,7 +1020,7 @@ section {
 }
 .marquee-wrap::before,
 .marquee-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1316,11 +1341,17 @@ section {
   overflow: hidden;
 }
 .cta-section::before {
-  content: '';
+  content: "";
   position: absolute;
-  width: 600px; height: 600px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.06), transparent 70%);
-  top: 50%; left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.06),
+    transparent 70%
+  );
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
 }
@@ -1410,7 +1441,9 @@ section {
   box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
   transition: all 0.3s ease;
   z-index: 1000;
-  animation: pulse 2s infinite, float 3s ease-in-out infinite;
+  animation:
+    pulse 2s infinite,
+    float 3s ease-in-out infinite;
 }
 
 .whatsapp-sticky:hover {
@@ -1441,7 +1474,8 @@ section {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0px);
   }
   50% {
